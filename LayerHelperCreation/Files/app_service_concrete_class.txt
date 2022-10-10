@@ -1,0 +1,18 @@
+﻿using AutoMapper;
+using System;
+using static RiskManagement.Application.Behaviours.ContractBehaviours;
+using RiskManagement.Application.Interfaces;
+
+namespace RiskManagement.Application.Services
+{
+    public class [APP_SERVICE_CLASS] : [APP_INTERFACE_SERVICE_CLASS]
+    {
+        private readonly IMapper _mapper;
+
+        public [APP_SERVICE_CLASS] (IMapper mapper)
+        {
+            _mapper = mapper;
+        }
+      
+    }
+}

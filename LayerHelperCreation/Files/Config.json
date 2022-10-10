@@ -1,0 +1,16 @@
+{
+  "baseRepositoryPath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\Riskmanagement.Infrastructure.Data\\Repositories",
+  "baseRepositoryInterfacePath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\RiskManagement.Domain\\Interfaces\\Repository",
+  "fileRepositoryInjectionPath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\Riskmanagement.Infrastructure.Data\\ServiceRegistration.cs",
+
+  "UnitOfWorkConcretePath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\Riskmanagement.Infrastructure.Data\\UnityOfWork\\UnityOfWork.cs",
+  "UnitOfWorkInterfacePath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\RiskManagement.Domain\\Interfaces\\Common\\IUnityOfWork.cs",
+
+  "baseBusinessPath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\RiskManagement.Business\\Business",
+  "baseBusinessInterfacePath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\RiskManagement.Domain\\Interfaces\\Business",
+  "fileBusinessInjectionPath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\RiskManagement.Business\\BusinessInjection.cs",
+
+  "baseAppServicePath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\RiskManagement.Application\\Services",
+  "baseAppServiceInterfacePath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\RiskManagement.Application\\Interfaces\\",
+  "fileAppServiceInjectionPath": "C:\\Users\\My PC\\Desktop\\CF PARTNERS\\rmp-api\\application\\RiskManagement.Application\\ServiceExtensions.cs"
+}

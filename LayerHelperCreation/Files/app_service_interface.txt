@@ -1,0 +1,9 @@
+﻿using System;
+
+namespace RiskManagement.Application.Interfaces
+{
+    public interface [APP_SERVICE_INTERFACE_NAME]
+    {
+        
+    }
+}

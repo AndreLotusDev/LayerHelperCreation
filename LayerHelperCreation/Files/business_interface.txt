@@ -1,0 +1,10 @@
+﻿using RiskManagement.Domain.Entities;
+using System;
+
+namespace RiskManagement.Domain.Interfaces
+{
+    public interface [ENTITY_INTERFACE_BUSINESS]
+    {
+        
+    }
+}
