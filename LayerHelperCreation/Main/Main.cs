@@ -235,7 +235,7 @@ namespace LayerHelperCreation
             {
                 bc.AddNewEntityInBusinessInterface();
                 bc.AddNewEntityInBusinessConcrete();
-                bc.AddNewEntityInRepositoryInjection();
+                bc.AddNewEntityInBusinessInjection();
             }
             
             if(options.Contains("appservice"))

@@ -28,14 +28,14 @@ namespace LayerHelperCreation.Shared
 
         public string formatBusinessServiceInjectionForRepository = "services.AddTransient<INTERFACE, CONCRETE>();";
 
-        public void AddNewEntityInRepositoryInjection()
+        public void AddNewEntityInBusinessInjection()
         {
             var tempInjection = formatBusinessServiceInjectionForRepository;
             tempInjection = tempInjection.Replace("INTERFACE", "I" + _pc.entityName + "Business");
             tempInjection = tempInjection.Replace("CONCRETE", _pc.entityName + "Business");
 
-            var fileRepositoryTxt = File.ReadAllLines(businessInjectionFilePath).ToList();
-            var indexOfAutomaticAdding = fileRepositoryTxt.Select(s => s.Trim()).ToList().IndexOf("//AUTOMATIC_REGISTER");
+            var fileBusinessTxt = File.ReadAllLines(businessInjectionFilePath).ToList();
+            var indexOfAutomaticAdding = fileBusinessTxt.Select(s => s.Trim()).ToList().IndexOf("//AUTOMATIC_REGISTER");
             if (indexOfAutomaticAdding == -1)
             {
                 MessageBox.Show("Errow finding position");
@@ -48,8 +48,8 @@ namespace LayerHelperCreation.Shared
             var sb = new StringBuilder();
             sb.Append("\t").Append("\t").Append("\t").Append(tempInjection);
 
-            fileRepositoryTxt.Insert(indexOfAutomaticAdding, sb.ToString());
-            File.WriteAllLines(businessInjectionFilePath, fileRepositoryTxt);
+            fileBusinessTxt.Insert(indexOfAutomaticAdding, sb.ToString());
+            File.WriteAllLines(businessInjectionFilePath, fileBusinessTxt);
         }
 
         public void AddNewEntityInBusinessInterface()
@@ -103,7 +103,7 @@ namespace LayerHelperCreation.Shared
                 .Replace("[ENTITY_BUSINESS]", _pc.entityName + "Business")
                 .Replace("[ENTITY_INTERFACE_BUSINESS]", "I" + _pc.entityName + "Business");
 
-            var fullPathName = businessBasePath + @"\" + $"{_pc.entityName}Repository.cs";
+            var fullPathName = businessBasePath + @"\" + $"{_pc.entityName}Business.cs";
             var created = File.Create(fullPathName);
             created.Dispose();
             File.WriteAllLines(fullPathName, fileBusiness);
